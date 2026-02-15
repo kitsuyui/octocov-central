@@ -4,6 +4,27 @@ central:
       - artifact://kitsuyui/bittersweet/octocov-report
       - artifact://kitsuyui/ts-playground/octocov-report
       - artifact://kitsuyui/react-playground/octocov-report
+      - artifact://kitsuyui/cachepot/octocov-report
+      - artifact://kitsuyui/cmd_cache/octocov-report
+      - artifact://kitsuyui/dict_zip/octocov-report
+      - artifact://kitsuyui/happy-commit/octocov-report
+      - artifact://kitsuyui/invisible/octocov-report
+      - artifact://kitsuyui/ml-playground/octocov-report
+      - artifact://kitsuyui/pypi-playground/octocov-report
+      - artifact://kitsuyui/python-mitmcache/octocov-report
+      - artifact://kitsuyui/python-pixel-sizes/octocov-report
+      - artifact://kitsuyui/python-richset/octocov-report
+      - artifact://kitsuyui/python-tally-token/octocov-report
+      - artifact://kitsuyui/python-template-analysis/octocov-report
+      - artifact://kitsuyui/python-throttle-controller/octocov-report
+      - artifact://kitsuyui/python-timeout-iterator/octocov-report
+      - artifact://kitsuyui/python-timevec/octocov-report
+      - artifact://kitsuyui/rendering-proxy/octocov-report
+      - artifact://kitsuyui/rust-playground/octocov-report
+      - artifact://kitsuyui/rust-rectangle-dividing/octocov-report
+      - artifact://kitsuyui/scraper/octocov-report
+      - artifact://kitsuyui/sxd_html/octocov-report
+      - artifact://kitsuyui/sxd_html_table/octocov-report
       # - artifact://owner/other-repo
       # - artifact://owner/another-repo
   badges:
