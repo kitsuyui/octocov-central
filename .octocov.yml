@@ -2,6 +2,7 @@ central:
   reports:
     datastores:
       - artifact://kitsuyui/ts-playground/octocov-report
+      - artifact://kitsuyui/react-playground/octocov-report
       # - artifact://owner/other-repo
       # - artifact://owner/another-repo
   badges:
