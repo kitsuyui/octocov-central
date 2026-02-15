@@ -1,6 +1,7 @@
 central:
   reports:
     datastores:
+      - artifact://kitsuyui/bittersweet/octocov-report
       - artifact://kitsuyui/ts-playground/octocov-report
       - artifact://kitsuyui/react-playground/octocov-report
       # - artifact://owner/other-repo
