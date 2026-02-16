@@ -25,6 +25,7 @@ central:
       - artifact://kitsuyui/scraper/octocov-report
       - artifact://kitsuyui/sxd_html/octocov-report
       - artifact://kitsuyui/sxd_html_table/octocov-report
+      - artifact://kitsuyui/sympy-reading/octocov-report
       # - artifact://owner/other-repo
       # - artifact://owner/another-repo
   badges:
