@@ -19,6 +19,7 @@ central:
       - artifact://kitsuyui/python-throttle-controller/octocov-report
       - artifact://kitsuyui/python-timeout-iterator/octocov-report
       - artifact://kitsuyui/python-timevec/octocov-report
+      - artifact://kitsuyui/myip/octocov-report
       - artifact://kitsuyui/rendering-proxy/octocov-report
       - artifact://kitsuyui/rust-playground/octocov-report
       - artifact://kitsuyui/rust-rectangle-dividing/octocov-report
