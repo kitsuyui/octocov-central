@@ -2,13 +2,16 @@ central:
   reports:
     datastores:
       - artifact://kitsuyui/bittersweet/octocov-report
+      - artifact://kitsuyui/browser-extensions-playground/octocov-report
       - artifact://kitsuyui/ts-playground/octocov-report
       - artifact://kitsuyui/react-playground/octocov-report
       - artifact://kitsuyui/cachepot/octocov-report
       - artifact://kitsuyui/cmd_cache/octocov-report
       - artifact://kitsuyui/dict_zip/octocov-report
+      - artifact://kitsuyui/gh-counter/octocov-report
       - artifact://kitsuyui/happy-commit/octocov-report
       - artifact://kitsuyui/invisible/octocov-report
+      - artifact://kitsuyui/just-submodules-hub/octocov-report
       - artifact://kitsuyui/ml-playground/octocov-report
       - artifact://kitsuyui/pypi-playground/octocov-report
       - artifact://kitsuyui/python-mitmcache/octocov-report
@@ -22,10 +25,10 @@ central:
       - artifact://kitsuyui/mure/octocov-report
       - artifact://kitsuyui/myip/octocov-report
       - artifact://kitsuyui/rendering-proxy/octocov-report
+      - artifact://kitsuyui/rust-oeis-playground/octocov-report
       - artifact://kitsuyui/rust-playground/octocov-report
       - artifact://kitsuyui/rust-rectangle-dividing/octocov-report
       - artifact://kitsuyui/scraper/octocov-report
-      - artifact://kitsuyui/sxd_html/octocov-report
       - artifact://kitsuyui/sxd_html_table/octocov-report
       - artifact://kitsuyui/sympy-reading/octocov-report
       # - artifact://owner/other-repo
