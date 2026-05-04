@@ -6,6 +6,7 @@ central:
       - artifact://kitsuyui/ts-playground/octocov-report
       - artifact://kitsuyui/react-playground/octocov-report
       - artifact://kitsuyui/cachepot/octocov-report
+      - artifact://kitsuyui/chromeless/octocov-report
       - artifact://kitsuyui/cmd_cache/octocov-report
       - artifact://kitsuyui/dict_zip/octocov-report
       - artifact://kitsuyui/gh-counter/octocov-report
