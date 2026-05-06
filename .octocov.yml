@@ -1,6 +1,7 @@
 central:
   reports:
     datastores:
+      - artifact://kitsuyui/agent-def-translator/octocov-report
       - artifact://kitsuyui/bittersweet/octocov-report
       - artifact://kitsuyui/browser-extensions-playground/octocov-report
       - artifact://kitsuyui/ts-playground/octocov-report
@@ -9,6 +10,7 @@ central:
       - artifact://kitsuyui/chromeless/octocov-report
       - artifact://kitsuyui/cmd_cache/octocov-report
       - artifact://kitsuyui/dict_zip/octocov-report
+      - artifact://kitsuyui/gh-build-size/octocov-report
       - artifact://kitsuyui/gh-counter/octocov-report
       - artifact://kitsuyui/happy-commit/octocov-report
       - artifact://kitsuyui/invisible/octocov-report
