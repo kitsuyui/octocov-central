@@ -1,5 +1,8 @@
 central:
   reports:
+    # GitHub Actions artifacts expire after 90 days by default.
+    # When a referenced repo stops running CI, its artifact will be deleted after 90 days,
+    # and its badge will stop updating. The "Check badge freshness" workflow step detects this.
     datastores:
       - artifact://kitsuyui/agent-def-translator/octocov-report
       - artifact://kitsuyui/bittersweet/octocov-report

@@ -23,3 +23,31 @@ jobs:
 
       - name: Run octocov
         uses: k1LoW/octocov-action@7a27b0b5cd308ab8b5096a9ef1ba701502a1ce6a # v0
+
+      - name: Check badge freshness
+        # Requires ubuntu-latest (GNU date). Detects badge directories not updated
+        # in 90+ days, which indicates the source artifact may have expired.
+        run: |
+          threshold_days=90
+          cutoff_epoch=$(date -d "${threshold_days} days ago" +%s)
+          mapfile -t repo_paths < <(grep -oP 'artifact://\K[^/]+/[^/]+(?=/octocov-report)' .octocov.yml)
+          if [ ${#repo_paths[@]} -eq 0 ]; then
+            echo "No artifact:// references found in .octocov.yml; skipping badge freshness check."
+            exit 0
+          fi
+          stale_repos=()
+          for repo_path in "${repo_paths[@]}"; do
+            badge_path="badges/${repo_path}"
+            if [ -d "${badge_path}" ]; then
+              last_updated=$(git log --format="%at" -1 -- "${badge_path}")
+              if [ -z "${last_updated}" ] || [ "${last_updated}" -lt "${cutoff_epoch}" ]; then
+                stale_repos+=("${repo_path}")
+              fi
+            fi
+          done
+          if [ ${#stale_repos[@]} -gt 0 ]; then
+            echo "::warning::Badges not updated in ${threshold_days}+ days (artifact may have expired):"
+            for repo_path in "${stale_repos[@]}"; do
+              echo "::warning::  - ${repo_path}"
+            done
+          fi
