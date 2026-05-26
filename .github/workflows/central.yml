@@ -4,10 +4,11 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 0,3,6,9 * * *'
-  push:
-    branches:
-      - main
   pull_request:
+
+concurrency:
+  group: collect
+  cancel-in-progress: false
 
 permissions:
   actions: read
