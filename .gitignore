@@ -1,0 +1,3 @@
+# Test execution time badges vary with each CI run (wall-clock non-determinism).
+# Excluding them keeps commits focused on meaningful coverage/ratio changes.
+badges/*/time.svg
