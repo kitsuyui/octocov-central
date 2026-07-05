@@ -1,5 +1,9 @@
 central:
   reports:
+    # GitHub Actions artifacts expire after 90 days by default.
+    # If a repo's CI stops running, its artifact is deleted and the badge
+    # silently goes stale.  check-badge-freshness.sh (run after octocov)
+    # warns when a badge directory has not been updated in 90+ days.
     datastores:
       - artifact://kitsuyui/agent-def-translator/octocov-report
       - artifact://kitsuyui/bittersweet/octocov-report
