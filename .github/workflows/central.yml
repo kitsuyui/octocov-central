@@ -4,13 +4,10 @@ on:
   workflow_dispatch:
   schedule:
     - cron: '0 0,3,6,9 * * *'
-  push:
-    branches:
-      - main
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  group: collect
+  cancel-in-progress: false
 
 permissions:
   actions: read
